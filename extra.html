@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thapar University</title>
+    <link rel="stylesheet" href="gstyles.css">
+
+    <script type="module" src="login.js" defer></script>
+    <script>
+        window.history.forward(1);
+    </script>
+</head>
+
+<body>
+    <div class="container" id="loginPage">
+        <header>
+            <h1>Thapar University, Patiala</h1>
+            <p>(Formerly known as Thapar Institute of Engineering and Technology)</p>
+        </header>
+        <div class="login-box">
+            <h2>LOGIN</h2>
+            <form onsubmit="login(event)">
+                <label for="memberType">Member Type</label>
+                <select id="memberType" name="memberType">
+                    <option value="student">Student</option>
+                    <option value="parent">Parent</option>
+                </select>
+                <label for="enrollmentNo">Enrollment ID</label>
+                <input type="text" id="enrollmentNo" name="enrollmentNo" required>
+                <label for="password">Password/Pin</label>
+                <input type="password" id="password" name="password" required>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

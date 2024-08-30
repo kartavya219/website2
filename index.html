@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <script>
+        window.history.forward(1);
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Thapar University</title>
+    <!-- <script id="clientEventHandlersJS" language="javascript">
+        function UserType_onchange() {
+
+            var mUserType;
+            mUserType = LoginForm.UserType.value;
+            if (mUserType == 'S') {
+                LoginForm.txtCode.value = "Enrollment No";
+            }
+            else if (mUserType == 'E') {
+                LoginForm.txtCode.value = "Employee Code";
+            }
+            else {
+                LoginForm.txtCode.value = "Parents ID";
+            }
+        }
+
+        function MemberCode_onchange() {
+            var mUserCode;
+            mUserCode = LoginForm.MemberCode.value;
+            LoginForm.MemberCode.value = mUserCode.toUpperCase();
+        }
+
+    </script> -->
+    <script type="module" src="login.js" defer></script>
+    <script language="Javascript1.1">
+
+        function detect() {
+
+            if (screen.width > 800 || screen.height > 600) {
+                alert("This web page is best viewed with a screen resolution of 800 * 600. Your current resolution is " + screen.width + " by " + screen.height + ". If possible please change your monitor resolution as 800 * 600 ")
+            }
+        }
+
+        // detect();
+
+
+    </script>
+    <!-- <div id="uuidMachine">1394f5b0-c208-46e4-8eef-d41acfb9100b</div> -->
+</head>
+
+<body alink="#ff00ff" bgcolor="#d6d2d6" rightmargin="0" leftmargin="0" topmargin="0" bottommargin="0"
+    class="vsc-initialized">
+
+    <table bgcolor="#a43f06" align="center" valign="middle" cellpadding="0" cellspacing="0" border="0"
+        style="WIDTH: 680px; HEIGHT: 500px" rules="none">
+        <tbody>
+            <tr>
+                <td colspan="2" style="WIDTH: 742px; HEIGHT: 106px">
+                    <table bgcolor="#a43f06" cellpadding="0" cellspacing="0" border="0" background="header.jpg"
+                        style="WIDTH: 742px; HEIGHT: 106px">
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- <tr>
+                <td colspan="2" align="center">
+                    <font color="white" size="2" face="verdana"><strong> WEB KIOSK (INTERNET) for
+                            Parents/Students</strong></font>
+                </td>
+            </tr> -->
+            <tr>
+                <td style="WIDTH: 738px; HEIGHT: 81px" colspan="2">
+                    <table bgcolor="#a43f06" cellpadding="0" cellspacing="0" border="0"
+                        background="panel-below-header.jpg" style="WIDTH: 742px; HEIGHT: 81px">
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table bgcolor="#a43f06" background="centre-l.png" cellpadding="0" cellspacing="0"
+                        border="0" style="WIDTH: 430px; HEIGHT: 286px">
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table bgcolor="#a43f06" align="cenetr" background="centre-right.jpg" cellpadding="0"
+                        cellspacing="0" border="0" style="WIDTH: 312px; HEIGHT: 286px" rules="none">
+                        <form method="post" action="CommonFiles/UserAction.jsp" name="LoginForm"></form>
+                        <tbody>
+                            <tr>
+                                <td align="center">
+                                    <input id="txtUType"
+                                        style="BORDER-BOTTOM: medium none; BORDER-LEFT-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; FONT-FAMILY: sans-serif; FONT-SIZE: x-small; FONT-STYLE: normal; HEIGHT: 19px; TEXT-ALIGN: right; VERTICAL-ALIGN: middle; WIDTH: 99px"
+                                        size="12" value="Member Type" name="txtuType" readonly="" tabindex="100"
+                                        height="22" width="99" align="right">
+                                    <select size="1" name="UserType" tabindex="1" language="Javascript"
+                                        onchange="UserType_onchange()" style="VERTICAL-ALIGN: middle; WIDTH: 99px">
+                                        <option value="S" selected="">Students</option>
+                                        <option value="P">Parents</option>
+
+                                    </select>
+                                    <font color="red"><sub>*</sub></font><br>
+                                    <input readonly="" name="txtCode" value="Enrollment No" style="BORDER-BOTTOM: medium none; BORDER-LEFT-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; FONT-FAMILY: sans-serif; FONT-SIZE: x-small; FONT-STYLE: normal; HEIGHT: 22px; TEXT-ALIGN: right;
+          VERTICAL-ALIGN: middle; WIDTH: 99px" size="12" lowsrc="" tabindex="101" width="99">
+                                    <input name="MemberCode" size="11" id="enrollmentNo" style="VERTICAL-ALIGN: middle; WIDTH: 99px">
+                                    <font color="red"><sub>*</sub></font>
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;<input id="txtPIN"
+                                        style="BORDER-BOTTOM: medium none; BORDER-LEFT-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; FONT-FAMILY: sans-serif; FONT-SIZE: x-small; FONT-STYLE: normal; HEIGHT: 19px; TEXT-ALIGN: right; VERTICAL-ALIGN: middle; WIDTH: 85px"
+                                        size="15" name="txtPin" readonly="" value="Password/Pin" tabindex="103"
+                                        width="99">
+                                    <input type="password" id="password" name="Password" size="10" tabindex="3"
+                                        style="HEIGHT: 22px; VERTICAL-ALIGN: middle; WIDTH: 99px">&nbsp;<font
+                                        color="red"><sub>*</sub></font>
+                                    <br>
+                                    <input id="submit"
+                                        style="FONT-FAMILY: Arial; FONT-SIZE: x-small; HEIGHT: 25px; VERTICAL-ALIGN:    top; WIDTH: 95px"
+                                        tabindex="4" type="submit" size="30" value="Submit" name="BTNSubmit"
+                                        height="25">
+
+                                    <!-- <input id="BTNReset"
+                                        style="FONT-FAMILY: Arial; FONT-SIZE: x-small; HEIGHT: 25px; VERTICAL-ALIGN:    top; WIDTH: 94px"
+                                        tabindex="5" type="reset" size="30" value="Reset" name="BTNReset" height="25"> -->
+                                    <br><br>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" bgcolor="white"><b>
+                        <font color="red">Disclaimer :</font>
+                        <font color="black">
+                            Thapar Institute of ENgineering and Technology is not responsible for any inadvertent error
+                            that may have crept in the results being published on WEB KIOSK. The results published on
+                            net are for immediate information to the examinees. These cannot be treated as final result.
+                            Original Grade Cards have been issued by the Institute separately under the signature of
+                            Registrar and are authentic proof of academic performance.
+                        </font>
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2" style="WIDTH: 740px; HEIGHT: 47px">
+                    <table bgcolor="#a43f06" cellpadding="0" cellspacing="0" border="0" background="footer.jpg"
+                        style="WIDTH: 740px; HEIGHT: 47px">
+                        <tbody>
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+
+    <container id="my-app-container"></container><a href="" id="waLink" style="display: none;"></a>
+</body>
+
+</html>

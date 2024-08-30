@@ -1,0 +1,43 @@
+body{
+    background-color:#fceac6;
+}
+.table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.row {
+display: flex;
+justify-content: space-between;
+}
+
+.table-header, .table-time, .table-slot {
+text-align: center;
+margin: 0.3rem;
+border-radius: 0.5rem;
+padding: 1rem;
+overflow-x: auto;
+overflow-y: auto;
+max-height: 100px;
+
+}
+
+.table-header {
+background-color: rgba(128, 0, 0, 1);
+color: #fff;
+min-width: 150px;
+flex: 1;
+}
+
+.table-time {
+background-color: rgba(128, 0, 0, 1);
+color: #fff;
+min-width: 80px;
+}
+
+.table-slot {
+background-color: #333;
+color: #fff;
+min-width: 150px;
+flex: 1;
+}

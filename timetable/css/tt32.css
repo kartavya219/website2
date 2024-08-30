@@ -1,0 +1,43 @@
+body{
+    background-color: #fceac6;
+}
+.table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.row {
+display: flex;
+justify-content: space-between;
+}
+
+.bg-dark1, .bg-dark, .bg {
+text-align: center;
+margin: 0.3rem;
+border-radius: 0.5rem;
+padding: 1rem;
+overflow-x: auto;
+overflow-y: auto;
+max-height: 100px;
+
+}
+
+.bg-dark1 {
+background-color: rgba(128, 0, 0, 1);
+color: #fff;
+min-width: 150px;
+flex: 1;
+}
+
+.bg-dark {
+background-color: rgba(128, 0, 0, 1);
+color: #fff;
+min-width: 80px;
+}
+
+.bg {
+background-color: #333;
+color: #fff;
+min-width: 150px;
+flex: 1;
+}
