@@ -164,12 +164,12 @@ table {
 table,
 th,
 td {
-    border: 1px solid #000000;
+    border: 2px solid #837c7c;
 }
 
 th,
 td {
-    padding: 10px;
+    padding: 5px;
     text-align: left;
 }
 /* 
@@ -178,10 +178,10 @@ th {
 } */
 
 h2 {
-    color: #fb0000;
-    /* Maroon text color for headings */
+    color: #000000;
     margin-bottom: 10px;
     text-align: center;
+    font-size: 23px;
 }
 .sidebar p{
 text-align: center;
@@ -192,4 +192,10 @@ color: #551A8B;
 font-size: 15px;
 display: flex;
 
+}
+.content h3{
+    color:  #fb0000;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
 }

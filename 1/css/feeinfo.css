@@ -174,16 +174,21 @@
     padding: 10px;
     text-align: left;
   }
-/* 
+
   th {
-    background-color: #333;
-  } */
+    background-color: #ec9126;
+  }
+  td {
+    background-color: #ffffff;
+  }
 
   h2 {
     color: #ff0000;
     /* Maroon text color for headings */
-    margin-bottom: 20px;
-    text-align: left;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
   }
   .student-info {
     margin-bottom: 30px;
