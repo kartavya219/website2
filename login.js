@@ -30,7 +30,7 @@ submit.addEventListener("click", function (event) {
             // Signed up 
             const user = userCredential.user;
             
-            if (email == '1@thapar.in' ){
+            if (email == '102316120@thapar.edu' ){
                 window.location.href = "1\\1.html"
             }
             else if (email == '2@thapar.in' ){
