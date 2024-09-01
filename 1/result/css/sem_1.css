@@ -155,12 +155,17 @@ table {
     margin: auto;
     color: #000000;
 }
+tr{
+    border-left : 1px solid rgba(0, 0, 0, 0.96);
+    border-right : 1px solid rgba(0, 0, 0, 0.96)
+}
 
 table,
 th,
 td {
     height: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.96);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.96);
+    border-top : 1px solid rgba(0, 0, 0, 0.96);
 }
 
 th,
@@ -170,6 +175,12 @@ td {
 
 th {
     background-color: #ec9126;
+    color: #ffffff;
+    font-size: 17px;
+}
+td {
+    background-color: #ffffff;
+    font-weight: 600;
 }
 
 h2 {
