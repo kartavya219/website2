@@ -33,13 +33,13 @@ submit.addEventListener("click", function (event) {
             if (email == '102316120@thapar.edu' ){
                 window.location.href = "1\\1.html"
             }
-            else if (email == '2@thapar.in' ){
+            else if (email == '102316188@thapar.edu' ){
                 window.location.href = "2\\2.html"
             }
-            else if (email == '3@thapar.in' ){
+            else if (email == '102316100@thapar.edu' ){
                 window.location.href = "3\\3.html"
             }
-            else if (email == '4@thapar.in' ){
+            else if (email == '102316110@thapar.edu' ){
                 window.location.href = "4\\4.html"
             }
             
