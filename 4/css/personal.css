@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #ec9126;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.header {
+    background-image:linear-gradient(180deg,#ec9126,#ec9126,#ec9126, #96310a);
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+}
+
+.header img {
+    margin-right: 20px;
+}
+
+.header h1 {
+    flex-grow: 1;
+    /* Ensures the heading takes up remaining space */
+}
+
+.signout-button {
+    background: #cd997a;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    /* Position it relative to the header */
+    right: 20px;
+    /* Distance from the right edge */
+    top: 20px;
+    /* Distance from the top edge */
+}
+
+.signout-button:hover {
+    background: rgba(200, 200, 200, 1);
+}
+
+.sidebar {
+    background: #ec9126;
+    padding: 20px;
+    width: 200px;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgba(200, 200, 200, 1);
+}
+
+.content {
+    background-color: #fceac6;
+    flex-grow: 1;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    margin-left: 220px;
+    margin-top: 80px;
+    overflow-y: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .content {
+        margin-left: 0;
+        margin-top: 80px;
+    }
+
+    .header {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .header img {
+        width: 40px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .button {
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    /* background-color: #800000; */
+    /* Maroon background */
+    color: #000000;
+    /* White text color */
+}
+
+table,
+th,
+td {
+    border: 2px solid #837c7c;
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: left;
+}
+/* 
+th {
+    background-color: #333;
+} */
+
+h2 {
+    color: #000000;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 23px;
+}
+.sidebar p{
+text-align: center;
+font-size: 15px;
+color: #551A8B;
+}
+.Timetable {
+font-size: 15px;
+display: flex;
+
+}
+.content h3{
+    color:  #fb0000;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
